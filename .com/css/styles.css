@@ -1,0 +1,408 @@
+:root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  .title {
+    color: #eeeff4;;
+  }
+  /* .wrapper { */
+  body {
+      font-family: Arial, sans-serif;
+      /* line-height: 1.6; */
+      margin: 0;
+      padding: 0;
+      background-color: #ddf0ec;
+    }
+    .highlight {
+      font-size: 15px; /* Makes the text bigger */
+      font-weight: bold; /* Makes the text bold */
+  }
+ 
+    
+    .page-header {
+      padding: 0.4em 1em;
+      background-color: #b3ccc6;
+    }
+    .title > h1 {
+      color: #fefdfd;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin: .2em 0;
+      
+    }
+    .menu {
+      position: relative;                    
+    }
+     
+     .menu-toggle { 
+      font-size: 2rem;
+      background: none;
+      border: none;
+     }
+      .menu-toggle { 
+        display: block;
+        position: absolute;
+        top: -1em;                           
+        right: -1em;
+         border: 0;                             
+        background-color: transparent;
+       font-size: 3em;
+        width: 2em;
+        margin: 0 auto;
+        height: 1em;
+        line-height: 0.4;
+        text-indent: 5em;                      
+         white-space: nowrap; 
+        overflow: hidden; 
+        cursor: pointer;
+        color: #eeeff4;
+      }    
+      
+     .menu-toggle::after {
+      position: absolute;
+      top: .2em;
+      left: .2em;
+      display: block;
+      content: "\2261";                      
+      text-indent: 0;
+     
+    }
+    .menu-dropdown {
+      display: none;
+      position: absolute;
+      justify-content: center;
+      right: 0;
+      left: 0;
+      margin: 0;
+   
+      
+    }
+    /* hiding the  menu */
+    .menu-dropdown, .nav-links {
+      display: none; 
+    }
+    /* This code show the menu */
+    .menu-dropdown.show-menu, .nav-links.show-menu {
+      display: block;
+      color: #eeeff4;
+    }
+    /* Showing the menu*/
+    .menu-dropdown.show-menu {
+      display: block; 
+     
+      
+    }
+    .menu.is-open .menu-dropdown {
+      display: block;
+      
+                           
+    }
+    
+    .nav-menu {
+      margin: 0;
+      padding-left: 0;
+      border: 1px solid #ccc;
+      list-style: none;
+      background-color: #000;
+      color: #fff;
+ 
+    }
+    .nav-menu > li + li {              
+      border-top: 1px solid #ffffff;
+    }
+    .nav-menu > li > a {
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    }
+    .nav-links {
+       display: none; 
+       list-style-type: none; 
+       justify-content: space-between; 
+      padding: 0; 
+      margin: 0; 
+    }
+    .nav-links a {
+      text-decoration: none; 
+      font-size: 1.2rem;
+      color: inherit; 
+    }
+    .nav-links a:hover {
+      color: #fff;
+      background-color: #9fe66d;
+      transform: scale(1.1); /* Slightly enlarges the link on hover */
+      text-shadow: 0.1em 0.1em 0.2em rgba(100, 51, 51, 0.5); /* Adds a subtle shadow */
+      border-radius: 5px; /* Optional: Adds rounded corners for a nice effect */
+      padding: 0.2em 0.5em; /* Optional: Adds padding for hover effect */
+    }
+    
+  
+    .hero {
+     
+        font-size: 1.5rem;
+        font-weight: bolder;
+      padding: 2em 1em;
+      text-align: center;
+      background-image: url(../assets/Screenshot3.png);
+      background-size: 100%;
+      color: #1a2344;
+      text-shadow: 0.1em 0.1em 0.3em #434040;
+    }
+  
+    nav .hamburger-menu {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: rgb(191, 126, 126);
+      cursor: pointer;
+    }
+    .page-header {
+      padding: 0.4em 1em;
+      background-color: #103a25;
+      
+    }
+    
+    .title > h1 {
+      
+       color: #333; 
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin: .2em 0;
+    }
+   
+    .main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 5px;
+      padding: 1em;
+      
+    }
+    #home img {
+      display: block;           /* Makes the image a block-level element */
+      margin: 0 auto;           /* Centers the image horizontally */
+      max-width: 100%;          /* Ensures the image scales with smaller screens */
+      height: auto;             /* Maintains the aspect ratio */
+      padding: 16px;            /* Adds some space around the image for mobile design */
+    }
+
+    figure {
+      border: 2px solid #ddd; /* Adds a border around the figure */
+      padding: 10px; /* Adds padding inside the figure */
+      margin: 20px auto; /* Centers the figure with auto margins */
+      max-width: 600px; /* Sets a maximum width for the figure */
+      background-color: #f9f9f9; /* Adds a background color */
+      border-radius: 8px; /* Rounds the corners of the figure */
+      text-align: center; /* Centers text and image within the figure */
+  }
+  h2 {
+    margin-bottom: 5px; /* Adds a small gap below the h2 */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
+    flex-direction: column; /* Ensures elements stack vertically */
+    /*height: 100vh;          /* Makes the section fill the viewport height */
+    text-align: center;  
+  }
+  
+  p {
+    margin-top: 5px; /* Adds a small gap above the text */
+  }
+  .firstchoice {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
+    flex-direction: column;
+    text-align: center; 
+  }
+  
+  .contact {
+    
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
+    flex-direction: column; /* Ensures elements stack vertically */
+    /*height: 100vh;          /* Makes the section fill the viewport height */
+    text-align: center;     /* Centers text */
+  }
+  
+  .contact form {
+    width: 50%;             /* Adjust the width to fit your layout */
+  }
+ 
+  .colophon {
+      gap: 5px;
+      padding: 1em;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      margin: 0;
+      gap: 5px;
+      padding: 1em;
+    }
+    .subtitle {
+     margin-top: 1.5em;
+     margin-bottom: 1.5em;
+     font-size: 0.875rem;
+     text-transform: uppercase;
+   }
+    
+    
+     section, input, #contact, textarea, #contact  {
+        margin: 10px 0; /* Adds space between elements*/
+        padding: 10px; /* Adds padding for better usability */
+        font-size: 16px; /* Makes the text readable */
+        font-weight: bolder;
+        border-radius: 4px; /* Rounds the corners */
+        border: 1px solid #ccc; /* Adds a subtle border */
+        position: relative;
+        width: 100%;
+
+    }
+   textarea#message {
+    position: relative;
+    width: 100%;
+   }
+input {
+  padding: auto;
+  margin-top: 2px;
+}
+
+    strong {
+      font-size: larger;
+      text-decoration-line: underline;
+      
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+     
+    }
+    figure {
+      margin: 0;
+    }
+    .testimonials {
+      background-color: #e9ecd5;
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials h2 {
+      color: #333;
+      margin-bottom: 20px;
+  }
+  
+  .testimonials {
+    padding-left: 16px; /* Adds padding on the left */
+    padding-right: 16px; /* Adds padding on the right */
+    text-align: center; /* Centers the text */
+      font-style: italic;
+      color: #555;
+      margin: 5px 0;
+     
+
+  }
+  
+  .testimonial footer {
+      margin-top: 5px;
+    padding-left: 10px;
+      color: #888;
+      font-size: 0.9em;
+  }
+  
+  button {
+      margin: 5px;
+      padding: 5px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+  }
+ 
+  
+  button:hover {
+      background-color: #376f4f;
+  }
+    
+    /*medium Tablet  */
+    @media (min-width: 35em) {
+      /* in this section  menu toggle 
+      button hide in medium and larger screens */
+      .menu-toggle {
+        display: none; 
+      }
+  
+      .nav-links {
+      display: flex;
+        justify-content: space-around;
+      gap: 2rem;
+     
+      }
+  
+      /* This section style navegation links */
+      .nav-links a {
+        font-size: 1rem;
+        color: #eeeff4;
+        /* color: #444; */
+      }
+      body {
+        background-color: #fafefc;
+    }
+  /* Addibg extra padding for better spacing */
+      section {
+        padding: 2rem;
+      }
+    }
+    /* large-esktop */
+     @media (min-width: 50em) {
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .page-header h1 {
+        font-size: 2rem;
+        
+      }
+  /* This code hides hambuger menu in large screens */
+      nav .hamburger-menu {
+        display: none;
+      }
+      /* In thus section menu always will be  visible on largerger screens  */
+      @media (min-width: 768px) {
+        .menu-dropdown, .nav-links {
+          display: flex; 
+          justify-content: space-around;
+          
+        }
+      }
+      .highlight p {
+        font-size: 15px;
+      }
+     
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+       
+      }
+     
+     }
+     
+   
+    
